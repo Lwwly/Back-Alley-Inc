@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+/* Reset some default styles */
+body {
+margin: 0;
+padding: 0;
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Shortcut holder styling */
+.shortcut-holder {
+display: flex;
+width: 100%;
+justify-content: flex-end;
+background-color: #f7f7f7;
+}
+
+/* Shortcut navigation bar */
+.shortcut {
+display: flex;
+align-items: center;
+height: 50px;
+padding: 0 10px;
+}
+
+.shortcut-item {
+padding: 0 10px;
+text-transform: uppercase;
+text-decoration: none;
+color: #000;
+}
+
+/* Logo styling */
+.logo {
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+
+/* Main navigation styling */
+.main-navigation {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #fff;
+padding: 10px 0;
+flex-grow: 1;
+}
+
+.navigation-item {
+padding: 0 15px;
+text-decoration: none;
+color: #000;
+text-transform: uppercase;
+}
+
+/* Search icon styling */
+.search-icon {
+display: flex;
+align-items: center;
+padding: 10px;
+}
+
+.search-icon img {
+display: block;
+width: 40px;
+height: 40px;
+}
+
