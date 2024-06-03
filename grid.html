@@ -8,6 +8,20 @@
 </head>
 <body>
 	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
+	<div class="studielinjer-boxes">
+  		<div class="column-left" style="background-color:#747474;">
+    		<h2>Column 1</h2>
+    		<p>Some text..</p>
+  		</div>
+  		<div class="column-middle" style="background-color:#747474;">
+    		<h2>Column 2</h2>
+    		<p>Some text..</p>
+  		</div>
+  		<div class="column-right" style="background-color:#747474;">
+    		<h2>Column 3</h2>
+    		<p>Some text..</p>
+  		</div>
+	</div>
 	<section class="skole-beskrivelse-box"></section>
 </body>
 <style>
@@ -15,7 +29,7 @@
 		background: #434343;
 		margin: 0;
 		padding: 0;
-		box-sizing: border-text;
+		box-sizing: border-box;
 	}
 	video {
 		position:relative;
@@ -33,6 +47,30 @@
 		width: 100px;
 		z-index: 1;
 	}
-
+	.studielinjer-boxes {
+		position: relative;
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+	}
+	.column-left, .column-middle, .column-right {
+		float: left;
+  		padding: 10px;
+  		height: 100px;
+	}
+	.column-left, .column-right {
+  		width: 25%;
+}
+	.column-middle {
+		margin-left: 15px;
+		margin-right: 15px;
+  		width: 25%;
+}
+	.studielinjer-boxes:after {
+ 		content: "";
+  		display: table;
+  		clear: both;
+}
+	
 </style>
 </html>

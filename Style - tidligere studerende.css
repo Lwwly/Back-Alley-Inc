@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tidligere-studerende-stylebox
+{
+	height:770px;
+	width:1194px;
+	background-color: #F05C6D;
+	align-items:center;
+	justify-content: center;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:100px;
+	
+	clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0 100%);
+	
+}
+
+
+#tidligere-studerende-overskrift
+ {
+	padding-top:20px;
+	margin-bottom:50px;
+}
+
+
+.tidligere-studerende-infoboks
+
+{
+	margin:auto;
+	height:590px;
+	width:1070px;
+	background-color:rgba(67,67,67,0.40);
+	
+	display:grid;
+	grid-template-columns:50% 50%; 
+	min-width:100px;
+	max-width:1070px;
+	text-align:center;
+	max-height: 590px;
+
+	
+}
+
+
+.tidligere-studerende-billeder
+{
+	
+	opacity:100%;
+	display:grid;
+	grid-template-columns:25px 1fr 25px 1fr 25px;
+	grid-template-rows:25px 1fr 25px 1fr 25px;
+	max-height: 590px;
+	
+	
+	
+	
+}
+
+#billede
+{
+	background-color: grey;
+	
+}
+
+#billede2
+{
+	background-color: grey;
+}
+
+
+.tidligere-studerende-infotekst
+{
+	width:auto;
+	height:590px;
+	
+	opacity:100%;
+	display:flex;
+	text-align:center;
+	justify-content: center;
+	max-height: 590px;
+
+	
+	
+}
+
+
+#infotekst-tss
+{
+	width:auto;
+	height:590px;
+	text-align:center;
+	justify-content: center;
+	display:flex;
+	max-height: 590px;
+	overflow:hidden;
+
+	
+}
+
+#infotekst-ts
+{
+	text-align:center;
+	justify-content: center;
+	max-height: 590px;
+	
+}
+
+
+
+.boxshadow-tidligere-studerende
+{
+	opacity:60%;
+	height:20px;
+	width:1144px;
+	background-color: #F05C6D;
+	margin-left:360px;
+	margin-right:auto;
+	clip-path: polygon(0.2% 0, 100% 0%, 99.8% 100%, 0 100%);
+}
