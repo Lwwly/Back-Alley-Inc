@@ -8,26 +8,31 @@
 </head>
 <body>
 	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
-	<section class="video-overlay"></section>
+	<section class="skole-beskrivelse-box"></section>
 </body>
 <style>
 	*{
+		background: #434343;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-text;
 	}
 	video {
-		width: 100vw;
+		position:relative;
+		width: 100%;
+		z-index: 2;
+		filter: brightness(15%) blur(6px);
+	}
+	.skole-beskrivelse-box {
+		background: 0;
+		position: relative;
+		filter: drop-shadow(0px 10px 0px #B74350);
+		border-top: 50px solid #D54354;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		width: 100px;
 		z-index: 1;
 	}
-	.video-overlay {
-		background: rgba(80, 80, 80, .9);
-		position: relative;
-		width: 100vw;
-		height: 100vh;
-		top: -100vh;
-		opacity: 1;
-		z-index: 2;
-	}
-	</style>
+
+</style>
 </html>
