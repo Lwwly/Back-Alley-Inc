@@ -2,22 +2,93 @@
 /* CSS Document */
 
 
+@media only screen and (max-width: 1100px) {
+	.box-for-partners {
+		width: 90%;
+		padding: 9 20px;
+	}
+}
 
 .center-box-partners
 {
-	display:flex;
+	
 justify-content: center;
-
+	display:flex;
 }
+
+
+#partnersoverskrift
+{
+	
+}
+
 
 
 .box-for-partners
 
 {
-display:flex;
+
 justify-content: center;
 item-align:center;
 background-color:#F05C6D;
-width:1360px;
-height:738px;
+width:1076px;
+height:auto;
+border-radius: 5px;
+padding-bottom:45px;
+	 
+}
+
+
+
+
+.overskrift-partners
+{
+	justify-content: center;
+	text-align:center;
+	margin-top:80px;
+	margin-bottom: 50px;
+}
+
+
+.layoutbox
+{
+	  width: 824px;
+  height: auto;
+	display:flex;
+	margin-left:126px;
+}
+
+.layout {
+ 
+
+  display: grid;
+  grid-template-rows: repeat( 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 62px;
+	
+  
+	
+	margin-top: 50px;
+
+}
+
+.imageborder
+{
+	border-radius: 5px
+}
+
+.image-tekst
+{
+	text-align:center;
+}
+
+.dropshadow-partners
+{
+opacity:60%;
+	height:20px;
+	width:1056px;
+	background-color: rgba(240,92,109,0.60);
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0 0 5px 5px
 }
