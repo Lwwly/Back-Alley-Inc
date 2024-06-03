@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /* Reset some default styles */
+
 body {
 margin: 0;
 padding: 0;
@@ -66,4 +67,51 @@ display: block;
 width: 40px;
 height: 40px;
 }
+
+/* NY KODE; BRUG ALT UNDER */
+/* Image and the rest */
+.image-container-1 {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+.image-container-1 img {
+display: block;
+}
+
+.image-container-1 img.slant-left {
+transform: skewY(-5deg);
+}
+
+.image-container-1 img.slant-right {
+transform: skewY(5deg);
+}
+
+.slideshow-container {
+position: relative;
+width: 420px;
+height: 550px;
+overflow: hidden;
+}
+
+.image-container-2 {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.image-container-2 img {
+min-width: 100%;
+height: 100%;
+}
+
+.Image-nav-bar {
+display: flex;
+}
+
+.nav-item {
+margin-right: 20px;
+}
+
+
 
