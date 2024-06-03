@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" contents="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>b-roll</title>
+</head>
+<body>
+	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
+	<section class="video-overlay"></section>
+</body>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-text;
+	}
+	video {
+		width: 100vw;
+		z-index: 1;
+	}
+	.video-overlay {
+		background: rgba(80, 80, 80, .9);
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		top: -100vh;
+		opacity: 1;
+		z-index: 2;
+	}
+	</style>
+</html>
