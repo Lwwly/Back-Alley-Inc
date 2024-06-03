@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-	background: #c43949;
+	
 }
 
 
@@ -110,12 +110,12 @@ nav ul li a.active {
 		z-index: 999;
 		width: 280px;
 		height: 100vh;
-		background-color: #ececec;
+		background-color: #434343;
 		transition: 0.2s; 
 		box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
 	}
 	
-	#nav_check:checked av {
+	#nav_check:checked ~ nav {
 		left: 0;
 		
 	}
