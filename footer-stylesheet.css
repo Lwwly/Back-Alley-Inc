@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-	background-color: rgb(67,67,67);
+	background-color: rgb(202,20,41);
 	color: white;
 	display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,4 +44,18 @@ img.social-link {
 .fone-number h3, .fone-number p {
 	margin-block: .15em;
 	margin:0
+}
+
+.other-links {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.other-links a {
+	width: 50%
+}
+
+a {
+	color:white
 }
