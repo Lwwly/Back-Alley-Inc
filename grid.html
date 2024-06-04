@@ -9,20 +9,27 @@
 <body>
 	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
 	<div class="studielinjer-boxes">
-  		<div class="column-left" style="background-color:#747474;">
-    		<h2>Column 1</h2>
-    		<p>Some text..</p>
+  		<div class="column-left">
+    		<h2 class="column-text-left">Column 1</h2>
+    		<p class="column-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
-  		<div class="column-middle" style="background-color:#747474;">
-    		<h2>Column 2</h2>
-    		<p>Some text..</p>
+  		<div class="column-middle">
+    		<h2 class="column-text-middle">Column 2</h2>
+    		<p class="column-text-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
-  		<div class="column-right" style="background-color:#747474;">
-    		<h2>Column 3</h2>
-    		<p>Some text..</p>
+  		<div class="column-right">
+    		<h2 class="column-text-right">Column 3</h2>
+    		<p class="column-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
 	</div>
 	<section class="skole-beskrivelse-box"></section>
+	<div class="trapezoid-container">
+        <div class="trapezoid">
+            <div class="trapezoid-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo.
+            </div>
+        </div>
+    </div>
 </body>
 <style>
 	*{
@@ -37,6 +44,48 @@
 		z-index: 2;
 		filter: brightness(15%) blur(6px);
 	}
+	.studielinjer-boxes {
+		position: relative;
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+	}
+	.column-left, .column-middle, .column-right {
+		background: 0;
+  		height: 100px;
+	}
+	.column-text-left, .column-text-middle, .column-text-right {
+		background-color: inherit;
+		padding: 10px;
+		
+}
+	.column-left {
+		width: 25%;
+		border-bottom: 100vh solid#747474;
+		border-left: 25px solid transparent;
+		filter: drop-shadow(-10px 10px 0px #6A6A6A);
+}
+	.column-middle {
+		margin-left: 15px;
+		margin-right: 15px;
+  		width: 25%;
+		border-bottom: 100vh solid #747474;
+		filter: drop-shadow(0px 10px 0px #6A6A6A);
+}
+	.column-right {
+  		width: 25%;
+		height: auto;
+		background-color: #747474;
+		shape-outside: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+		shape-margin: 20px;
+   		clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+		filter: drop-shadow(10px 10px 0px #6A6A6A);
+}
+	.studielinjer-boxes:after {
+ 		content: "";
+  		display: table;
+  		clear: both;
+}
 	.skole-beskrivelse-box {
 		background: 0;
 		position: relative;
@@ -46,31 +95,30 @@
 		border-right: 25px solid transparent;
 		width: 100px;
 		z-index: 1;
-	}
-	.studielinjer-boxes {
-		position: relative;
-		display: flex;
-  		align-items: center;
-  		justify-content: center;
-	}
-	.column-left, .column-middle, .column-right {
-		float: left;
-  		padding: 10px;
-  		height: 100px;
-	}
-	.column-left, .column-right {
-  		width: 25%;
 }
-	.column-middle {
-		margin-left: 15px;
-		margin-right: 15px;
-  		width: 25%;
-}
-	.studielinjer-boxes:after {
- 		content: "";
-  		display: table;
-  		clear: both;
-}
-	
+
+        .trapezoid-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .trapezoid {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #747474;
+            transform: skewY(-10deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .trapezoid-text {
+            transform: skewY(10deg);
+            color: white;
+            font-size: 2vw; /* Responsive text size */
+            text-align: center;
+        }
 </style>
 </html>
