@@ -5,72 +5,62 @@
 <meta http-equiv="X-UA-Compatible" contents="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>b-roll</title>
+<link rel="stylesheet" href="grid-stylesheet.css">
+<link rel="stylesheet" href="menu.css">
 </head>
 <body>
+<script src="javascript.js"></script>
+<header>
+	<div class="logo">
+	 <img alt="logo" src="billeder/AKT Dania Games Logo_white.png">
+	</div>
+	<input type="checkbox" id="nav_check" hidden>
+	<nav>
+	    <div class="logo2">
+		<img alt="logo2" src="billeder/AKT Dania Games Logo_white.png">
+		</div> 
+	<ul>
+		<li>
+		<a href="https://eadania.dk/uddannelser/" class="active">Uddannelser</a>
+		</li>
+		<li>
+		<a href="https://eadania.dk/efteruddannelse/">Efter- og videruddannelse</a>
+		</li>
+		<li>
+		<a href="https://eadania.dk/karriere/">Karriere</a>
+		</li>
+		<li>
+		<a href="#">Om os</a>
+		</li>
+		</ul>
+	</nav>
+<label for="nav_check" class="hamburger">
+</label>
+</header>
 	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
 	<div class="studielinjer-boxes">
-  		<div class="column-left" style="background-color:#747474;">
-    		<h2>Column 1</h2>
-    		<p>Some text..</p>
+  		<div class="column-left">
+    		<h2 class="column-text-left">Column 1</h2>
+    		<p class="column-text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
-  		<div class="column-middle" style="background-color:#747474;">
-    		<h2>Column 2</h2>
-    		<p>Some text..</p>
+  		<div class="column-middle">
+    		<h2 class="column-text-middle">Column 2</h2>
+    		<p class="column-text-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
-  		<div class="column-right" style="background-color:#747474;">
-    		<h2>Column 3</h2>
-    		<p>Some text..</p>
+  		<div class="column-right">
+    		<h2 class="column-text-right">Column 3</h2>
+    		<p class="column-text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo. Vestibulum porttitor dolor felis, et bibendum mauris pharetra dictum. Suspendisse eget leo nec purus volutpat venenatis. Vestibulum sed cursus nunc. Morbi varius, massa id condimentum auctor, lectus diam aliquet tellus, non rutrum leo nisl non nunc. Nulla quis eros orci. Fusce egestas egestas nisl, ac pharetra nunc tincidunt in. Fusce consectetur id purus sit amet condimentum.</p>
   		</div>
 	</div>
-	<section class="skole-beskrivelse-box"></section>
+	<section class="skole-beskrivelse-box">&nbsp;</section>
+	<div class="trapezoid-container">
+        <div class="trapezoid">
+            <div class="trapezoid-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus ex, mollis sit amet risus imperdiet, vestibulum ornare leo.
+            </div>
+        </div>
+    </div>
 </body>
 <style>
-	*{
-		background: #434343;
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-	video {
-		position:relative;
-		width: 100%;
-		z-index: 2;
-		filter: brightness(15%) blur(6px);
-	}
-	.skole-beskrivelse-box {
-		background: 0;
-		position: relative;
-		filter: drop-shadow(0px 10px 0px #B74350);
-		border-top: 50px solid #D54354;
-		border-left: 25px solid transparent;
-		border-right: 25px solid transparent;
-		width: 100px;
-		z-index: 1;
-	}
-	.studielinjer-boxes {
-		position: relative;
-		display: flex;
-  		align-items: center;
-  		justify-content: center;
-	}
-	.column-left, .column-middle, .column-right {
-		float: left;
-  		padding: 10px;
-  		height: 100px;
-	}
-	.column-left, .column-right {
-  		width: 25%;
-}
-	.column-middle {
-		margin-left: 15px;
-		margin-right: 15px;
-  		width: 25%;
-}
-	.studielinjer-boxes:after {
- 		content: "";
-  		display: table;
-  		clear: both;
-}
-	
 </style>
 </html>
