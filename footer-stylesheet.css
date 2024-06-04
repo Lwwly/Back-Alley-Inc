@@ -6,19 +6,15 @@ body {
 }
 
 footer {
-	background-color: rgb(67,67,67);
+	background-color: #CA1429;
 	color: white;
 	display: grid;
     grid-template-columns: 1fr 1fr;
 	justify-items: center;
-	
-	
 }
-
 .Kurt {
 	color: lightgrey;
 	font-size: 0.75em
-	
 }
 
 img.social-link {
@@ -26,6 +22,7 @@ img.social-link {
 }
 
 .contact-info {
+	background-color: #CA1429;
 	display:flex;
 	flex-direction:column;
 
@@ -44,4 +41,18 @@ img.social-link {
 .fone-number h3, .fone-number p {
 	margin-block: .15em;
 	margin:0
+}
+
+.other-links {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.other-links a {
+	width: 50%
+}
+
+a {
+	color:lightgrey;
 }
