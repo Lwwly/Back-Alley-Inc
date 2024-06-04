@@ -1,6 +1,89 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
+
+
+.toggletab {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background-color: #ECECEC;
+	border: 1px solid; 
+	border-radius: 0 5px 5px 0; 
+	overflow: hidden;
+	transition: width 0.3s;
+	width: 40px;
 	
 }
+
+.toggletab:hover {
+	width: 200px;
+}
+
+
+.toggle-button {
+	width: 40px;
+    height: 40px;
+    background-color: #d32f2f;
+    position: relative;
+}
+
+.toggle-button::after {
+	content: '→';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+}
+
+
+.menu {
+	padding: 0; 
+	margin: 0;
+	list-style: none;
+	
+	
+}
+
+
+
+.menu li {
+	cursor: pointer;
+	transition: background-color 0.3s;
+	padding: 5px 10px;
+	margin: 0;
+}
+
+
+.menu li::before {
+    content: '';
+    color: #333;
+    font-size: 20px;
+    }
+
+.menu li span {
+    display: none;
+}
+
+.toggletab:hover .menu li span {
+    display: inline;
+}
+
+
+li {
+	list-style: circle;
+}
+
+a {
+	text-decoration: none;
+	color: #434343;
+	
+}
+
+
+
+
+
