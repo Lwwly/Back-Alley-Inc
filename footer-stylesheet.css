@@ -6,19 +6,15 @@ body {
 }
 
 footer {
-	background-color: rgb(202,20,41);
+	background-color: #CA1429;
 	color: white;
 	display: grid;
     grid-template-columns: 1fr 1fr;
 	justify-items: center;
-	
-	
 }
-
 .Kurt {
 	color: lightgrey;
 	font-size: 0.75em
-	
 }
 
 img.social-link {
@@ -26,6 +22,7 @@ img.social-link {
 }
 
 .contact-info {
+	background-color: #CA1429;
 	display:flex;
 	flex-direction:column;
 
@@ -57,5 +54,5 @@ img.social-link {
 }
 
 a {
-	color:white
+	color:lightgrey;
 }
