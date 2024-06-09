@@ -2,18 +2,35 @@
 /* CSS Document */
 
 
-@media only screen and (max-width: 1100px) {
-	.box-for-partners {
-		width: 90%;
-		padding: 9 20px;
+@media (max-width: 950px) {
+    .layout { grid-template-columns: 1fr;
+		
+		}
 	}
+		
+	@media (min-width: 951px) and (max-width: 1024px) {
+    .layout {
+        grid-template-columns: repeat(2, 1fr);
+		
+		}
+	}
+  
+	
+	@media (min-width: 1025px) {
+    .layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
+
+
 
 .center-box-partners
 {
 	
 justify-content: center;
 	display:flex;
+	
 }
 
 
@@ -31,10 +48,12 @@ justify-content: center;
 justify-content: center;
 item-align:center;
 background-color:#F05C6D;
-width:1076px;
+width:100%;
+max-width:1076px;
 height:auto;
-border-radius: 5px;
+text-align:center;
 padding-bottom:45px;
+		align-items:center;
 	 
 }
 
@@ -52,21 +71,32 @@ padding-bottom:45px;
 
 .layoutbox
 {
-	  width: 824px;
+	width:100%;
+	  max-width: 824px;
   height: auto;
 	display:flex;
-	margin-left:126px;
+		align-items:center;
+	
+	
+	
 }
 
 .layout {
  
-
+	width:100%;
+  max-width: 824px;
+  height: auto;
   display: grid;
-  grid-template-rows: repeat( 1fr);
-  grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	margin:auto;
+	margin-left:15%;
+	align-items:center;
+text-align:center;
+	
   gap: 62px;
 	
-  
+	
+	
 	
 	margin-top: 50px;
 
@@ -74,13 +104,32 @@ padding-bottom:45px;
 
 .imageborder
 {
-	border-radius: 5px
+	border-radius: 5px;
+	
+	 
 }
 
-.image-tekst
+
+	
+
+.image-tekst 
 {
+
 	text-align:center;
 }
+
+
+.hover-effect:hover
+{
+	transition: all 0.3s ease;
+transform: scale(1.1);
+
+ filter: brightness(70%);
+	 cursor: pointer;
+}
+
+
+
 
 .dropshadow-partners
 {
@@ -90,5 +139,12 @@ opacity:60%;
 	background-color: rgba(240,92,109,0.60);
 	margin-left:auto;
 	margin-right:auto;
-	border-radius: 0 0 5px 5px
+	
+}
+
+
+.linkline
+{
+	text-decoration: none;
+            color: black;
 }
