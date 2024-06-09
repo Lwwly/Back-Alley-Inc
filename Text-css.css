@@ -2,5 +2,6 @@
 /* CSS Document */
 
 .Tekst {
-text-align: center;
+text-align: center; /* Can be change */
+color: #ca1429;
 }
