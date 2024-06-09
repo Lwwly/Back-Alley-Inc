@@ -203,3 +203,31 @@
 		background: #D54354;
 		opacity:1;
 }
+
+.column-left:hover
+{
+    transition: all 0.3s ease;
+transform: scale(1.15);
+     cursor: pointer;
+		z-index: 3;
+}
+
+.column-middle:hover
+{
+    transition: all 0.3s ease;
+transform: scale(1.15);
+     cursor: pointer;
+		z-index: 3;
+}
+
+.column-right:hover
+{
+    transition: all 0.3s ease;
+transform: scale(1.15);
+     cursor: pointer;
+		z-index: 3;
+}
+
+.backgroundvid {
+	margin-bottom: 2em;
+}
