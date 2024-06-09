@@ -212,5 +212,14 @@ nav ul li a.active {
 }
 
 
+/* tab ikon fix */ 
+
+.tabikon {
+	width: 16px;
+	height: 16px;
+	
+}
+
+
 
 
