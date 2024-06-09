@@ -3,5 +3,17 @@
 
 .Tekst {
 text-align: center; /* Can be change */
-color: #ca1429;
+color: #f5f5f5;
+}
+
+.box {
+background-color: #434343 /* kan blive tager ud */
+}
+
+h1 {
+font-size: 50px;
+}
+
+p {
+font-size: 20px;
 }
