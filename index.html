@@ -4,36 +4,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" contents="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!----- SEO TILFØJET AF ARTILON HYSENI-->
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dania Games er et Erhvervsakademi lokaliseret i Grenaa med flere forskellige uddannelser. På Dania Games kan du læse alt fra multimediedesigner til datamatiker, med fokus på spil.">
- 
-    
-    <link rel="icon" href="billeder/Controller rød.png" type="image/png" sizes="16x16">
-<!---- SEO keywords ---> 
-<meta name="keywords" content="Dania Games, Erhvervsakademi Grenaa, EaDania, Spildesign, Multimediedesigner, Datamatiker, Softwareudvikler, PBA, Videregående uddannelser, Dania, Mellemlange uddannelser, Efter- og videreuddannelse, spiludvikling, Game Hub">
-
-<!------- beskrivelse når copy paste link--> 
-	<meta name="author" content="Dania Games - Uddannelser med fokus på spil">
-
-<!-------- logo til tabben-->
-
-
-<!---- SEO lavet af Artilon Hyseni --> 	
-	
-	
 <title>Dania Games</title>
 <link rel="stylesheet" href="grid-stylesheet.css">
 <link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="footer-stylesheet.css">
+<link rel="stylesheet" href="toggletabcss.css">
 <link rel="stylesheet" href="Text-css.css">
 <link href="Style - tidligere studerende.css" rel="stylesheet" type="text/css">
-<script src="Script2.js"></script>
+<script src="togglejs.js"></script>	
 </head>
 <body>
-
-	<!-- Header & menubar - Artilon Hyseni -->
+	<!-- Header & menubar -->
 
 <header>
 	<div class="logo">
@@ -45,7 +26,7 @@
 		<img alt="logo2" src="billeder/AKT Dania Games Logo_white.png">
 		</div> 
 	<ul>
-		<!-- Menubar - Artilon Hyseni-->
+		<!-- Menubar -->
 		<li>
 		<a href="https://eadania.dk/uddannelser/" class="active">Uddannelser</a>
 		</li>
@@ -64,17 +45,47 @@
 </label>
 </header>
 	
+<section id="sec1">
+	<div class="toggletab"></div>
+	<div class="toggle-button"></div>
+		<ul class="menu"></ul>
 	
-	<!---- basen for navi baren // nu ændret -->
+	<!---- basen for navi baren -->
 	
+	<ul>
+	<li>
+	<icon class="circular"></icon>
+	<a href="#sec2">Om skolen</a>
+	<icon class="arrow"></icon>
+	</li>
+	</ul>
 	
-	<div class="containervid">
-		<div class="content">
-			<h1>Dania Games</h1>
-			<a href="#">Ansøg nu</a>
-	<video autoplay loop muted src="Assets/test-background-video.mp4" alt="forsidevideo" class="backgroundvid" type="video/mp4"></video>
-</div>
-</div>
+	<ul>
+	<li>
+	<icon class="circular"></icon>
+	<a href="#sec3">Video og billeder</a>
+	<icon class="arrow"></icon>
+	</li>
+	</ul>	
+	
+	<ul>
+	<li>
+	<icon class="circular"></icon>
+	<a href="#sec4">Tidligere studerende</a>
+	<icon class="arrow"></icon>
+	</li>
+	</ul>
+	
+	<ul>
+	<li>
+	<icon class="circular"></icon>
+	<a href="#sec5">Samarbejdespartnere</a>
+	<icon class="arrow"></icon>
+	</li>
+	</ul>
+	
+	<video autoplay loop muted src="Assets/test-background-video.mp4"></video>
+</section>
 	
 	<section id="sec2">
 		<!-- Studielinjer -->
@@ -109,8 +120,8 @@
 	</section>
 	<section id="sec4">
 	<!-- Billeder --> 
-	<div class="container-roller">
-	<div class="roller">
+	<div class="container-slider">
+	<div class="slider">
 		<input type="radio" class="radio" name="images" id="radio-1" checked>
 		<input type="radio" class="radio" name="images" id="radio-2">
 		<input type="radio" class="radio" name="images" id="radio-3">
@@ -120,41 +131,41 @@
 		<input type="radio" class="radio" name="images" id="radio-7">
 		<input type="radio" class="radio" name="images" id="radio-8">
 		<input type="radio" class="radio" name="images" id="radio-9">
-		<div class="roll" id="roll-1">
-			<img src="billeder/image1.png" alt="Billde1"/>
-			<div class="caption">EXPO 2024<span></span></div>
+		<div class="slide" id="slide-1">
+			<img src="billeder/image1.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-2">
-			<img src="billeder/image2.png" alt="Billede2"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-2">
+			<img src="billeder/image2.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-3">
-			<img src="billeder/image3.png" alt="Billede3"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-3">
+			<img src="billeder/image3.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-4">
-			<img src="billeder/image4.png" alt="Billede4"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-4">
+			<img src="billeder/image4.png" alt=""/>
+			<div class="caption"><span>The</span>Lion</div>
 		</div>
-		<div class="roll" id="roll-5">
-			<img src="billeder/image5.png" alt="Bilelde5"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-5">
+			<img src="billeder/image5.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-6">
-			<img src="billeder/image6.png" alt="Billede6"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-6">
+			<img src="billeder/image6.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-7">
-			<img src="billeder/image7.png" alt="Billede7"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-7">
+			<img src="billeder/image7.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-8">
-			<img src="billeder/image8.png" alt="Billede8"/>
-			<div class="caption">Studielivet på Dania Games<span></span></div>
+		<div class="slide" id="slide-8">
+			<img src="billeder/image8.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
-		<div class="roll" id="roll-9">
-			<img src="billeder/image9.png" alt="Billede9"/>
-			<div class="caption"><span></span></div>
+		<div class="slide" id="slide-9">
+			<img src="billeder/image9.png" alt=""/>
+			<div class="caption"><span>The</span>Person</div>
 		</div>
 		<div class="dots">
 			<label for="radio-1" id="label-1"></label>
@@ -239,17 +250,15 @@
 	<!--------- Tidligere studerende --> 
 	<section id="sec5">
 	
-
-    <div class="slider">
-        <div class="slides">
-            <img class="slide" src="billeder/image1.png" alt="Image #1">
-            <img class="slide" src="billeder/image2.png" alt="Image #2">
-            <img class="slide" src="billeder/image3.png" alt="Image #3">
-        </div>
-        <button class="prev" onclick="prevSlide()">&#10094</button>
-        <button class="next" onclick="nextSlide()">&#10095</button>
-    </div>
-
+<div class="tidligere-studerende">
+	<div class="tidligere-studerende-slideshow">
+		<div class="tidligere-studerende-content">
+			<img src="billeder/image1.png" alt=""/>
+			<img src="billeder/image2.png" alt=""/>
+			<img src="billeder/image3.png" alt=""/>
+		</div>
+	</div>
+</div>
 	
 	</section>
 	
