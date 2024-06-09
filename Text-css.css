@@ -2,5 +2,19 @@
 /* CSS Document */
 
 .Tekst {
-text-align: center;
+text-align: center; /* Can be change */
+color: #f5f5f5;
+}
+
+.box {
+background-color: #434343 /* kan blive tager ud */
+}
+
+h1 {
+font-size: 50px;
+font-style: bold;
+}
+
+p {
+font-size: 20px;
 }
