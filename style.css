@@ -74,8 +74,18 @@ padding-bottom:45px;
 
 .imageborder
 {
-	border-radius: 5px
+	border-radius: 5px;
+	
+	 
 }
+
+.imageborder:hover{
+transition: all 0.3s ease;
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ filter: brightness(70%);
+	 cursor: pointer;
+	}
 
 .image-tekst
 {
@@ -90,5 +100,5 @@ opacity:60%;
 	background-color: rgba(240,92,109,0.60);
 	margin-left:auto;
 	margin-right:auto;
-	border-radius: 0 0 5px 5px
+	
 }
