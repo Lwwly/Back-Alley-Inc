@@ -161,8 +161,57 @@ nav ul li a.active {
 	
 }
 
+.containervid {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-color: rgba(0,0,0,0);
+	align-items: center;
+	justify-content: center;
+	
+}
 
 
+
+.contentvid {
+	text-align: center;
+	
+}
+
+.contentvid h1 {
+	font-size: 95px;
+	color: #b93040;
+	margin-bottom: 50px;
+	
+	
+	
+}
+
+.contentvid a {
+	font-size: 23px;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 15px 25px;
+	border-radius: 50px;
+	transition: 0.3s;
+	
+	
+}
+
+.contentvid a:hover {
+	background-color: #fff;
+	color: #000;
+	
+}
+
+.backgroundvid {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1
+	
+}
 
 
 
