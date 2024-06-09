@@ -13,6 +13,17 @@ footer {
 	justify-items: center;
 	margin-top: 2em
 }
+
+@media (max-width:600px) {
+	footer {grid-template-columns:1fr;}	
+	.fuckin-links h3 {
+		text-align:center;
+	}
+	.other-links a {
+		width:100%
+	}
+}
+
 .Kurt {
 	color: lightgrey;
 	font-size: 0.75em
@@ -49,11 +60,13 @@ img.social-link {
 	flex-direction:row;
 	flex-wrap: wrap;
 }
+@media (min-width:600px) {
+	
 
 .other-links a {
 	width: 50%
 }
-
+}
 footer a {
 	color:lightgrey;
 	text-decoration: underline;
