@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+#pager {
+   margin: 0 auto;
+   width: 800px;
+   max-width: 100%;
+   text-align: center;
+}
+#pager input[type=radio] {
+   display: none;
+}
+#pager label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#pages {
+   padding: 10px;
+   border: 3px solid #e94368;
+   background: #ad1b2c;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#page1:checked ~ #pages .inner {
+   margin-left: 0;
+}
+#page2:checked ~ #pages .inner {
+   margin-left: -100%;
+}
+#page3:checked ~ #pages .inner {
+   margin-left: -200%;
+}
+#page4:checked ~ #pages .inner {
+   margin-left: -300%;
+}
+#pages .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+}
+#pages .page {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+#pages .page_1 {
+   background: #D54354;
+}
+#pages .page_2 {
+   background: #D54354;
+}
+#pages .page_3 {
+   background: #D54354;
+}
+#pages .page_4 {
+   background: #D54354;
+}
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#page1:checked ~ #controls label:nth-child(2),
+#page2:checked ~ #controls label:nth-child(3),
+#page3:checked ~ #controls label:nth-child(4),
+#page4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#page1:checked ~ #controls label:nth-last-child(2),
+#page2:checked ~ #controls label:nth-last-child(3),
+#page3:checked ~ #controls label:nth-last-child(4),
+#page4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#page1:checked ~ #bullets label:nth-child(1),
+#page2:checked ~ #bullets label:nth-child(2),
+#page3:checked ~ #bullets label:nth-child(3),
+#page4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #page1:checked ~ #controls label:nth-child(2),
+   #page2:checked ~ #controls label:nth-child(3),
+   #page3:checked ~ #controls label:nth-child(4),
+   #page4:checked ~ #controls label:nth-child(1),
+   #page1:checked ~ #controls label:nth-last-child(2),
+   #page2:checked ~ #controls label:nth-last-child(3),
+   #page3:checked ~ #controls label:nth-last-child(4),
+   #page4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #pages {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
