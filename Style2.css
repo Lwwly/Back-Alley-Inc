@@ -38,7 +38,7 @@ img.displaySlide{
 }
 .slider-box {
         background: #747474;
-		margin-left: 10%;
+		margin-left: 20%;
 		margin-right: 10%;
 		margin-top: 5%;
 		margin-bottom: 5%;
@@ -49,7 +49,7 @@ img.displaySlide{
 		justify-content: center;
 		position: relative;
 	    filter: drop-shadow(-10px 10px 2px #6A6A6A);
-		width: 80%;
+		width: 60%;
 		z-index: 1;
 }
 .slide{
