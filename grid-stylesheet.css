@@ -12,7 +12,7 @@
 		position:relative;
 		width: 100%;
 		z-index: 2;
-		filter: brightness(50%) blur(5px);
+		filter: brightness(50%) blur(10px);
 }
 	.studielinjer-boxes {
 		position: relative;
