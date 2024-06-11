@@ -26,7 +26,7 @@
 }
 	.column-text-left, .column-text-middle, .column-text-right {
 		background-color: inherit;
-		padding: 10px;
+		padding: 30px;
 }
 	.column-left {
 		background: #747474;
@@ -36,7 +36,8 @@
 		border-top: 10px solid #c4c4c4;
 		border-left: 10px solid #4c4c4c;
 		border-right: 10px solid #9c9c9c;
-		filter: drop-shadow(-10px 10px 2px #6A6A6A);
+		
+		clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 5% 0);
 }
 	.column-middle {
 		background: #747474;
