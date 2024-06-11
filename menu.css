@@ -63,11 +63,14 @@ header {
 	padding: 0 40px;
 	border-radius: 0 0 10px 10px;
 	margin: 0 auto;
+	
+	background-color:rgba(69,69,69,0.30);
+	
 }
 
 .logo {
-	width: 120px;
-	margin-top: 8px;
+	width: 140px;
+	margin-top: 0px;
 }
 
 nav .logo2{
