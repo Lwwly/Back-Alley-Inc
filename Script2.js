@@ -36,3 +36,18 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const active = document.getElementById('active');
+    const columnmiddle = document.getElementById('column-middle');
+
+    active.addEventListener('click', () => {
+        window.scrollTo({
+            top: column-middle.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
