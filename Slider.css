@@ -2,7 +2,8 @@
 /* CSS Document */
 #pager {
    margin: 0 auto;
-   width: 800px;
+   height:770px;
+	width:1194px;
    max-width: 100%;
    text-align: center;
 }

@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .tidligere-studerende-stylebox
 {
 	height:770px;
@@ -47,6 +48,12 @@
 }
 
 
+.images
+{
+	height:200;
+	width:100%;
+}
+
 .tidligere-studerende-billeder
 {
 	
@@ -63,17 +70,27 @@
 
 #billede
 {
-	background-color: grey;
+
 	border-radius:5px;
 	
 }
 
-#billede2
+#billedeshadow
 {
-	background-color: grey;
-	border-radius:5px;
+box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.40) ;
 }
 
+#billede2
+{
+	
+	border-radius:5px;
+
+}
+
+#billedeshadow2
+{
+	box-shadow: 10px -5px 5px 2px rgba(0,0,0,0.40);
+}
 
 .tidligere-studerende-infotekst
 {
@@ -109,7 +126,7 @@
 	text-align:center;
 	justify-content: center;
 	max-height: 590px;
-	
+	margin-right:25px;
 }
 
 
@@ -125,3 +142,5 @@
 	clip-path: polygon(0.2% 0, 100% 0%, 99.8% 100%, 0 100%);
 	border-radius: 0 0 5px 5px;
 }
+
+
