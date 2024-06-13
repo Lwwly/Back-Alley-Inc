@@ -4,41 +4,42 @@
 .astheticicon1, .astheticicon2, .astheticicon3, .astheticicon4, .astheticicon5, .astheticicon6, .astheticicon7, .astheticicon8, .astheticicon9, .astheticicon10, .astheticicon11, .astheticicon12
 {
 position:absolute;
+overflow:none;
 }
 
 
 .astheticicon1
 {
-	right:10vh;
+	right:10vw;
 	top:355vh;
-	z-index:2;
+	z-index:-10;
 	transform:rotate(-45deg);
 }
 
 
 .astheticicon2
 {
-	left:10vh;
-	top:475vh;
-	z-index:2;
+	left:10vw;
+	top:420vh;
+	z-index:-10;
 	transform:scaleX(-1);
 	
 }
 
 .astheticicon3
 {
-	right: 10vh;
+	right: 10vw;
 	top: 208vh;
-	z-index:2;
+	z-index:-10;
 	transform:rotate(25deg);
 	
 }
 
 .astheticicon4
 {
-	left: 5vh;
+	left: 10vw;
 	top: 250vh;
-	z-index:-1;
+	z-index:-10;
 	
 	transform:rotate(-25deg);
 	
@@ -46,9 +47,9 @@ position:absolute;
 
 .astheticicon5
 {
-	left: 15vh;
+	left: 15vw;
 	top: 160vh;
-	
+	z-index:-10;
 	transform:rotate(-25deg);
 	
 }
@@ -57,9 +58,9 @@ position:absolute;
 
 .astheticicon6
 {
-	right: -5vh;
+	right: 10vw;
 	top: 130vh;
-	z-index:2;	
+	z-index:-10;	
 	
 	transform:rotate(35deg);
 	
@@ -68,9 +69,9 @@ position:absolute;
 
 .astheticicon7
 {
-	right: 2vh;
-	top: 580vh;
-	z-index:1;	
+	right: 10vw;
+	top: 400vh;
+	z-index:-10;	
 	
 	transform:rotate(30deg);
 	
@@ -79,9 +80,9 @@ position:absolute;
 
 .astheticicon8
 {
-	left: 160vh;
-	top:480vh;
-	z-index:3;	
+	left: 10vw;
+	top:400vh;
+	z-index:-10;	
 	
 	transform:rotate(45deg);
 	
@@ -89,9 +90,9 @@ position:absolute;
 
 .astheticicon9
 {
-	left: -2vh;
-	top:700vh;
-	z-index:3;	
+	left: 10vw;
+	top:500vh;
+	z-index:-10;	
 	
 	transform:rotate(20deg);
 	
@@ -99,9 +100,9 @@ position:absolute;
 
 .astheticicon10
 {
-	left: -2vh;
-	top:715vh;
-	z-index:3;	
+	left: 10vw;
+	top:500vh;
+	z-index:-10;	
 	
 	transform:rotate(-30deg);
 	
@@ -110,9 +111,9 @@ position:absolute;
 
 .astheticicon11
 {
-		left: 25vh;
-	top:715vh;
-	z-index:3;	
+		left: 10vw;
+	top:500vh;
+	z-index:-10;	
 	
 	transform:rotate(45deg);
 	
@@ -121,10 +122,11 @@ position:absolute;
 
 .astheticicon12
 {
-		right: -5vh;
-	top:690vh;
-	z-index:1;	
 	
-	transform:rotate(-35deg);
+		right: 10vw;
+	top:500vh;
+	z-index:-10;	
+	
+	transform:rotate(35deg);
 	
 }
