@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width: 950px) {
+    .layout { grid-template-columns: 1fr;
+		
+		}
+	}
+		
+	@media (min-width: 951px) and (max-width: 1024px) {
+    .layout {
+        grid-template-columns: repeat(2, 1fr);
+		
+		}
+	}
+  
+	
+	@media (min-width: 1025px) {
+    .layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+.center-box-partners
+{
+	margin-top:65px;
+justify-content: center;
+	display:flex;
+	
+	
+}
+
+
+#partnersoverskrift
+{
+	
+}
+
+
+
+.box-for-partners
+
+{
+
+justify-content: center;
+item-align:center;
+background-color:#F05C6D;
+width:100%;
+max-width:1076px;
+height:auto;
+text-align:center;
+padding-bottom:45px;
+		align-items:center;
+	 
+}
+
+
+
+
+.overskrift-partners
+{
+	justify-content: center;
+	text-align:center;
+	margin-top:80px;
+	margin-bottom: 50px;
+}
+
+
+.layoutbox
+{
+	width:100%;
+	  max-width: 914px;
+  height: auto;
+	display:flex;
+		align-items:center;
+	
+	
+	
+}
+
+.layout {
+ 
+	width:100%;
+  max-width: 824px;
+  height: auto;
+  display: grid;
+	justify-content: center;
+	margin:auto;
+	margin-left:15%;
+	align-items:center;
+text-align:center;
+	
+  gap: 62px;
+	
+	
+	
+	
+	margin-top: 50px;
+
+}
+
+.imageborder
+{
+	border-radius: 5px;
+	
+	 
+}
+
+
+	
+
+.image-tekst 
+{
+
+	text-align:center;
+}
+
+
+.hover-effect:hover
+{
+	transition: all 0.3s ease;
+transform: scale(1.1);
+
+ filter: brightness(70%);
+	 cursor: pointer;
+}
+
+
+
+
+.dropshadow-partners
+{
+opacity:60%;
+	height:20px;
+	width:1056px;
+	background-color: rgba(240,92,109,0.60);
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:65px;
+	
+}
+
+
+.linkline
+{
+	text-decoration: none;
+            color: black;
+}
