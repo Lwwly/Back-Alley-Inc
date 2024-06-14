@@ -27,6 +27,7 @@
 	.column-text-left, .column-text-middle, .column-text-right {
 		background-color: inherit;
 		padding: 30px;
+        overflow-wrap: break-word;
 }
 	.column-left {
 		background: #747474;
@@ -36,8 +37,6 @@
 		border-top: 10px solid #c4c4c4;
 		border-left: 10px solid #4c4c4c;
 		border-right: 10px solid #9c9c9c;
-		
-		clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 5% 0);
 }
 	.column-middle {
 		background: #747474;
