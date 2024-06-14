@@ -26,8 +26,9 @@
 }
 	.column-text-left, .column-text-middle, .column-text-right {
 		background-color: inherit;
-		padding: 30px;
         overflow-wrap: break-word;
+        padding: 10px;
+        font-size: 1.5cqi;
 }
 	.column-left {
 		background: #747474;
