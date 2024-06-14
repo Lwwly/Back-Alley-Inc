@@ -94,24 +94,19 @@ box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.40) ;
 
 .tidligere-studerende-infotekst
 {
-	width:auto;
-	height:inherit;
-	
+	width:inherit;
+	height:100px;
 	opacity:100%;
 	display:flex;
 	text-align:center;
 	justify-content: center;
 	max-height: 590px;
-
-	
-	
 }
 
 
 #infotekst-tss
 {
-	width:auto;
-	height:auto;
+    height: 100px;
 	text-align:center;
 	justify-content: center;
 	display:flex;
