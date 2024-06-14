@@ -64,6 +64,8 @@ img {
 }
 
 header {
+    right: 10vw;
+    left: 10vw;
 	width: 80%;
 	height: 70px;
 	display: flex;
@@ -72,8 +74,9 @@ header {
 	padding: 0 40px;
 	border-radius: 0 0 10px 10px;
 	margin: 0 auto;
-	
+	position: fixed;
 	background-color:rgba(69,69,69,0.30);
+    z-index: 100;
 	
 }
 
